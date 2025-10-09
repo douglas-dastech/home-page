@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DASTECH — Suporte, Licenças e Consultoria</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Suporte técnico remoto e presencial, licenciamento Microsoft, venda de equipamentos, certificados digitais e consultoria para vender ao governo.">
+</head>
+<body>
+<header class="topbar">
+  <div class="container row between center">
+    <a class="logo" href="#">
+      <img src="logo-dastech.png" alt="Dastech">
+    </a>
+    <nav class="nav">
+      <a href="#pilares">Soluções</a>
+      <a href="#suporte">Suporte</a>
+      <a href="#licencas">Licenças & Equip.</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#consultoria">Consultoria</a>
+      <a href="#contato" class="btn">Fale com a gente</a>
+    </nav>
+    <button class="burger" aria-label="menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="carousel" id="heroCarousel">
+    <div class="slides">
+      <div class="slide" style="background-image: linear-gradient(120deg, rgba(0,0,20,.6), rgba(0,0,0,.3)), url('https://picsum.photos/seed/pc1/1600/700');">
+        <div class="slide-content">
+          <h1>Licenças Microsoft & Implantação</h1>
+          <p>Windows e Microsoft 365 oficiais com onboarding e migração assistida.</p>
+          <a class="btn" href="#licencas">Quero comprar →</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: linear-gradient(120deg, rgba(0,0,20,.6), rgba(0,0,0,.3)), url('https://picsum.photos/seed/pc2/1600/700');">
+        <div class="slide-content">
+          <h1>PCs & Notebooks para produção</h1>
+          <p>Entrega pronta para uso, garantia e configuração sob medida.</p>
+          <a class="btn" href="#licencas">Ver opções →</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: linear-gradient(120deg, rgba(0,0,20,.6), rgba(0,0,0,.3)), url('https://picsum.photos/seed/cert/1600/700');">
+        <div class="slide-content">
+          <h1>Certificados Digitais</h1>
+          <p>e‑CNPJ e e‑CPF com atendimento guiado e emissão ágil.</p>
+          <a class="btn" href="#certificados">Emitir agora →</a>
+        </div>
+      </div>
+    </div>
+    <button class="nav prev" aria-label="Anterior" onclick="carouselPrev()">‹</button>
+    <button class="nav next" aria-label="Próximo" onclick="carouselNext()">›</button>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section id="pilares" class="section">
+  <div class="container">
+    <h2>Soluções principais</h2>
+    <p class="muted">Suporte contínuo, licenciamento oficial e estratégia para o setor público.</p>
+    <div class="cards3">
+      <article class="card">
+        <h3>Suporte Técnico — remoto e presencial</h3>
+        <p>Help Desk, prevenção, documentação e melhoria contínua.</p>
+        <ul class="check">
+          <li>Atendimento remoto e presencial</li>
+          <li>Monitoramento preventivo</li>
+          <li>SLA e relatórios executivos</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Licenças Microsoft e Equipamentos</h3>
+        <p>Windows & Microsoft 365, PCs e notebooks prontos para uso.</p>
+        <ul class="check">
+          <li>Onboarding e migração</li>
+          <li>Planos adequados ao seu time</li>
+          <li>Garantia e suporte</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Consultoria para vender ao Governo</h3>
+        <p>Estratégia para fornecedores que querem vender para prefeituras.</p>
+        <ul class="check">
+          <li>Viabilidade e catálogo</li>
+          <li>Pesquisa de preços (Lei 14.133/21)</li>
+          <li>Editais e recursos</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="certificados" class="section alt">
+  <div class="container">
+    <h2>Certificados Digitais</h2>
+    <div class="cards2">
+      <article class="card">
+        <h3>e‑CNPJ</h3>
+        <p>Assine documentos, emita NF‑e e acesse portais oficiais.</p>
+        <a class="btn full" href="#contato" onclick="openLead('e-CNPJ')">Quero comprar</a>
+      </article>
+      <article class="card">
+        <h3>e‑CPF</h3>
+        <p>Assinatura digital para cidadãos e profissionais.</p>
+        <a class="btn outline full" href="#contato" onclick="openLead('e-CPF')">Quero comprar</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container grid2 gap">
+    <div>
+      <h2>Fale com a Dastech</h2>
+      <p class="muted">Conte seu cenário que desenhamos um plano sob medida.</p>
+      <ul class="contact">
+        <li>WhatsApp: <a href="https://wa.me/5551993139229" target="_blank" rel="noreferrer">(+55) 51 99313-9229</a></li>
+        <li>E-mail: <a href="mailto:contato@dastech.inf.br">contato@dastech.inf.br</a></li>
+        <li>Endereço: Rua Três de Outubro, 1310, Bairro Pátria Nova, Novo Hamburgo/RS</li>
+      </ul>
+    </div>
+    <form class="form" onsubmit="event.preventDefault();alert('Recebido! Entraremos em contato.');">
+      <input placeholder="Seu nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <input placeholder="Telefone/WhatsApp" required>
+      <textarea rows="5" placeholder="Conte seu desafio" required></textarea>
+      <button class="btn full" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container row between center">
+    <p>© 2025 DASTECH ASSESSORIA EM INFORMÁTICA LTDA — CNPJ 34.724.976/0001-29</p>
+    <a href="#">Política de Privacidade</a>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante, grande e pulsante -->
+<a class="whats strong" href="https://wa.me/5551993139229" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M19.11 17.12c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.19.27-.71.88-.87 1.06-.16.18-.32.2-.59.07-.27-.14-1.12-.41-2.14-1.31-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.53-.44-.46-.62-.47l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.5.57.63.2 1.21.17 1.67.1.51-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/></svg>
+</a>
+
+<!-- Modal de captura estilo lead IG -->
+<div id="leadModal" class="lead-modal hidden">
+  <div class="overlay" onclick="closeLead()"></div>
+  <div class="box">
+    <button class="close" onclick="closeLead()">×</button>
+    <h3>Quase lá! 🚀</h3>
+    <p>Deixe seus dados que finalizamos sua compra/atendimento.</p>
+    <form onsubmit="event.preventDefault();closeLead();alert('Recebido! Entraremos em contato.');">
+      <input placeholder="Seu nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <input placeholder="Telefone/WhatsApp" required>
+      <input placeholder="Produto (auto)" id="leadProduct">
+      <button class="btn full" type="submit">Enviar</button>
+      <p class="tiny">Ao enviar, você concorda com nossa Política de Privacidade.</p>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
